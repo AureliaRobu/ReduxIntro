@@ -1,6 +1,12 @@
 import { Action, CustomerPayload } from '../../interfaces/commonInterfaces';
 
-const initialStateCustomer = {
+interface CustomerState {
+  fullName: string;
+  nationalId: string;
+  createdAt: string;
+}
+
+const initialStateCustomer: CustomerState = {
   fullName: '',
   nationalId: '',
   createdAt: '',
